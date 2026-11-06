@@ -1,0 +1,43 @@
+pile : 8192 Ko
+--- -O0, N=10
+iter : longueur 10
+code retour : 0
+rec : longueur 10
+code retour : 0
+--- -O0, N=1000
+iter : longueur 1000
+code retour : 0
+rec : longueur 1000
+code retour : 0
+--- -O0, N=100000
+iter : longueur 100000
+code retour : 0
+rec : longueur 100000
+code retour : 0
+--- -O0, N=1000000
+iter : longueur 1000000
+code retour : 0
+Segmentation fault
+code retour : 139
+--- -O0, N=10000000
+iter : longueur 10000000
+code retour : 0
+Segmentation fault
+code retour : 139
+seuil, essai 1 (a 1000 pres) : passe a N=261480, plante a N=262456
+seuil, essai 2 (a 1000 pres) : passe a N=261480, plante a N=262456
+seuil, essai 3 (a 1000 pres) : passe a N=261480, plante a N=262456
+--- recherche recursive (recursion terminale), -O0, N=1000000
+Segmentation fault
+code retour : 139
+--- liberation recursive, -O0, N=1000000
+Segmentation fault
+code retour : 139
+--- meme programme compile avec -O2, N=10000000
+rech : absent
+code retour : 0
+rec : longueur 10000000
+code retour : 0
+--- liberation recursive, -O2, N=1000000
+Segmentation fault
+code retour : 139

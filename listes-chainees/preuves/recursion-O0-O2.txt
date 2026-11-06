@@ -1,0 +1,8 @@
+mesure_pile : longueur_rec contient 1 appel(s) a elle-meme
+mesure_pile : somme_rec contient 1 appel(s) a elle-meme
+mesure_pile : rechercher_rec contient 1 appel(s) a elle-meme
+mesure_pile : liberer_rec contient 1 appel(s) a elle-meme
+mesure_pile_O2 : longueur_rec contient 0 appel(s) a elle-meme
+mesure_pile_O2 : somme_rec contient 0 appel(s) a elle-meme
+mesure_pile_O2 : rechercher_rec contient 0 appel(s) a elle-meme
+mesure_pile_O2 : liberer_rec contient 1 appel(s) a elle-meme

@@ -1,0 +1,16 @@
+$ gcc --version | head -1
+gcc (Debian 12.2.0-14+deb12u1) 12.2.0
+$ valgrind --version
+valgrind-3.19.0
+$ ulimit -s
+8192
+$ gcc -std=c11 -Wall -Wextra -Werror -O0 -g -o exercices exercices.c liste.c
+(compilation reussie avec -Werror : aucun avertissement)
+$ gcc -std=c11 -Wall -Wextra -Werror -O0 -g -o piege_tete piege_tete.c liste.c
+(compilation reussie avec -Werror : aucun avertissement)
+$ gcc -std=c11 -Wall -Wextra -Werror -O0 -g -o mesure_pile mesure_pile.c liste.c
+(compilation reussie avec -Werror : aucun avertissement)
+$ gcc -std=c11 -Wall -Wextra -Werror -O0 -g -o max_mauvais max_mauvais.c liste.c
+(compilation reussie avec -Werror : aucun avertissement)
+$ gcc -std=c11 -Wall -Wextra -Werror  -O2 -o mesure_pile_O2 mesure_pile.c liste.c
+(compilation reussie avec -Werror : aucun avertissement)

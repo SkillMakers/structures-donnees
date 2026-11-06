@@ -1,0 +1,2 @@
+croissante  , 30 maillons : maximum 30, 1073741823 appels
+decroissante, 30 maillons : maximum 30, 30 appels

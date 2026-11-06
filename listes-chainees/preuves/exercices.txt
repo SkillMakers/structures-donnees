@@ -1,0 +1,31 @@
+
+=== 1. Construire (insertion en queue) ===
+iter : 12 -> 5 -> 31 -> 8 -> NULL
+rec  : 12 -> 5 -> 31 -> 8 -> NULL
+
+=== 2. Afficher a l'envers ===
+iter : 8 31 5 12 
+rec  : 8 31 5 12 
+
+=== 3. Longueur, somme, maximum ===
+longueur : iter 4, rec 4
+somme    : iter 56, rec 56
+maximum  : iter 31, rec 31
+
+=== 4. Rechercher ===
+iter 31 : trouve
+rec  31 : trouve
+iter 7  : absent (NULL)
+rec  7  : absent (NULL)
+le maillon de 31 : valeur 31, suivant 8
+
+=== 5. Supprimer ===
+iter, supprimer 12 (la tete) : 5 -> 31 -> 8 -> NULL
+iter, supprimer 31 (milieu)  : 5 -> 8 -> NULL
+iter, supprimer 7 (absent)   : 5 -> 8 -> NULL
+rec,  supprimer 12 (la tete) : 5 -> 31 -> 8 -> NULL
+rec,  supprimer 31 (milieu)  : 5 -> 8 -> NULL
+rec,  supprimer 7 (absent)   : 5 -> 8 -> NULL
+
+=== 6. Liberer ===
+liste liberee
