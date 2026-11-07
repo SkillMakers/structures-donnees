@@ -1,0 +1,9 @@
+--- depiler une pile vide, version sans test
+depiler : 4
+Segmentation fault
+code retour : 139
+--- depiler une pile vide, depiler de pile.c (assert)
+depiler : 4
+piege_vide: pile.c:41: depiler: Assertion `!pile_est_vide(p)' failed.
+Aborted
+code retour : 134

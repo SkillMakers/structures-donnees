@@ -1,0 +1,24 @@
+pile d'appels : 8192 Ko
+--- N=1000
+rech_iter, N=1000 : absent, taille ensuite 1000
+code retour : 0
+rech_rec, N=1000 : absent, taille ensuite 1000
+code retour : 0
+--- N=100000
+rech_iter, N=100000 : absent, taille ensuite 100000
+code retour : 0
+rech_rec, N=100000 : absent, taille ensuite 100000
+code retour : 0
+--- N=1000000
+rech_iter, N=1000000 : absent, taille ensuite 1000000
+code retour : 0
+Segmentation fault
+code retour : 139
+--- N=10000000
+rech_iter, N=10000000 : absent, taille ensuite 10000000
+code retour : 0
+Segmentation fault
+code retour : 139
+seuil, essai 1 (a 1000 pres) : passe a N=174653, plante a N=175628
+seuil, essai 2 (a 1000 pres) : passe a N=173677, plante a N=174653
+seuil, essai 3 (a 1000 pres) : passe a N=174653, plante a N=175628

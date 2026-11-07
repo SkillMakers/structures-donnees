@@ -1,0 +1,43 @@
+=== 1. Pile : empiler 4, 9, 2, 7 ===
+sommet -> 7 2 9 4
+sommet : 7
+depiler : 7
+depiler : 2
+sommet -> 9 4
+
+=== 2. File : enfiler 4, 9, 2, 7 (capacite 4) ===
+tete -> 4 9 2 7 <- queue
+pleine : oui
+defiler : 4
+defiler : 9
+enfiler 5, puis 8
+tete -> 2 7 5 8 <- queue
+cases du tableau : [5, 8, 2, 7], tete = indice 2
+
+=== 3. Rechercher sans detruire ===
+iter 9 : trouve ; sommet -> 7 2 9 4
+rec  9 : trouve ; sommet -> 7 2 9 4
+iter 5 : absent ; sommet -> 7 2 9 4
+rec  5 : absent ; sommet -> 7 2 9 4
+
+=== 4. Taille et copie ===
+iter : 4 ; sommet -> 7 2 9 4
+rec  : 4 ; sommet -> 7 2 9 4
+copie iter : sommet -> 7 2 9 4
+copie rec  : sommet -> 7 2 9 4
+original   : sommet -> 7 2 9 4
+
+=== 5. Inverser la pile ===
+iter : sommet -> 4 9 2 7
+rec, sur le resultat : sommet -> 7 2 9 4
+
+=== 6. Inverser la file ===
+iter : tete -> 7 2 9 4 <- queue
+rec, sur le resultat : tete -> 4 9 2 7 <- queue
+
+=== 7. Parentheses equilibrees ===
+({[]})          : equilibre
+f(t[i]) + {x}   : equilibre
+([)]            : NON equilibre
+((a)            : NON equilibre
+())             : NON equilibre

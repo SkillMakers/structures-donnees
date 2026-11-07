@@ -11,5 +11,6 @@ Tout le code est compilé avec `-Wall -Wextra -Werror` et exécuté, et les sort
 | Dossier | Vidéo |
 |---|---|
 | [`listes-chainees/`](listes-chainees/) | [Listes chaînées en C : cours et exercices corrigés](https://youtu.be/UAFC9QbYD4E) |
+| [`piles-files/`](piles-files/) | [Piles et files en C : cours et exercices corrigés](https://youtu.be/PTLaJJ202OY) |
 
-Prochaines vidéos de la série : les piles et les files, puis les arbres binaires de recherche.
+Prochaine vidéo de la série : les arbres binaires de recherche.

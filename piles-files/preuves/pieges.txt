@@ -1,0 +1,8 @@
+=== Piege 1 : rechercher en depilant ===
+sommet -> 7 2 9 4
+rechercher 9 : trouve
+apres : sommet -> 4
+
+=== Piege 2 : file circulaire sans compteur (4 cases) ===
+file neuve : tete = 0, queue = 0, vide : oui
+apres 4 enfiler : tete = 0, queue = 0, vide : oui
