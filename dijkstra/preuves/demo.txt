@@ -1,0 +1,47 @@
+=== 1. Dijkstra depuis A, graphe 1 (le tableau) ===
+          |    A    B    C    D    E    F
+on fixe A |    0    4    2  inf  inf  inf
+on fixe C |    .    3    2   10   12  inf
+on fixe B |    .    3    .    8   12  inf
+on fixe D |    .    .    .    8   10   14
+on fixe E |    .    .    .    .   10   13
+on fixe F |    .    .    .    .    .   13
+distances : A=0 B=3 C=2 D=8 E=10 F=13 
+
+=== 2. Le chemin le plus court de A a F ===
+iter : A C B D E F 
+rec  : A C B D E F 
+longueur : 13
+
+=== 3. Graphe 2 (oriente) : Dijkstra depuis A ===
+          |    A    B    C    D    E
+on fixe A |    0    3    7  inf  inf
+on fixe B |    .    3    5    9  inf
+on fixe C |    .    .    5    6   13
+on fixe D |    .    .    .    6    8
+on fixe E |    .    .    .    .    8
+distances : A=0 B=3 C=5 D=6 E=8 
+chemin A -> E, iter : A B C D E 
+chemin A -> E, rec  : A B C D E 
+depuis E : A=inf B=1 C=3 D=4 E=0 
+chemin E -> A, iter : inaccessible
+chemin E -> A, rec  : inaccessible
+
+=== 4. Le moins d'etapes de A a F : parcours en largeur, graphe 1 ===
+ordre de visite : A B C D E F 
+etapes : A=0 B=1 C=1 D=2 E=2 F=3 
+chemin A -> F : A B D F 
+
+=== 5. Parcours en profondeur depuis F, graphe 1 ===
+profondeur, iter : F D B A C E 
+profondeur, rec  : F D B A C E 
+largeur          : F D E B C A 
+
+=== 6. Le piege : un poids negatif (graphe 3, oriente) ===
+          |    A    B    C    D
+on fixe A |    0    2    1  inf
+on fixe C |    .    2    1    2
+on fixe B |    .    2    .    2
+on fixe D |    .    .    .    2
+dijkstra     : A=0 B=2 C=1 D=2 
+bellman-ford : A=0 B=2 C=0 D=1 
