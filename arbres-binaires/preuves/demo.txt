@@ -1,0 +1,62 @@
+=== 1. Inserer 50, 30, 70, 20, 40, 60, 80, 35, 65 ===
+iter, largeur : 50 30 70 20 40 60 80 35 65 
+rec,  largeur : 50 30 70 20 40 60 80 35 65 
+inserer 40 une 2e fois, largeur : 50 30 70 20 40 60 80 35 65 
+
+=== 2. Rechercher ===
+iter 35 : trouve
+rec  35 : trouve
+iter 55 : absent (NULL)
+rec  55 : absent (NULL)
+
+=== 3. Minimum et maximum ===
+minimum : iter 20, rec 20
+maximum : iter 80, rec 80
+
+=== 4. Hauteur, noeuds, feuilles ===
+hauteur     : iter 4, rec 4
+noeuds      : iter 9, rec 9
+feuilles    : iter 4, rec 4
+
+=== 5. Parcours en profondeur ===
+prefixe rec  : 50 30 20 40 35 70 60 65 80 
+prefixe iter : 50 30 20 40 35 70 60 65 80 
+infixe  rec  : 20 30 35 40 50 60 65 70 80 
+infixe  iter : 20 30 35 40 50 60 65 70 80 
+suffixe rec  : 20 35 40 30 65 60 80 70 50 
+suffixe iter : 20 35 40 30 65 60 80 70 50 
+
+=== 6. Parcours en largeur ===
+largeur : 50 30 70 20 40 60 80 35 65 
+
+=== 7. Supprimer ===
+--- supprimer 20 (une feuille)
+iter, largeur : 50 30 70 40 60 80 35 65 
+rec,  largeur : 50 30 70 40 60 80 35 65 
+iter, infixe  : 30 35 40 50 60 65 70 80 
+rec,  infixe  : 30 35 40 50 60 65 70 80 
+--- supprimer 60 (un seul fils)
+iter, largeur : 50 30 70 20 40 65 80 35 
+rec,  largeur : 50 30 70 20 40 65 80 35 
+iter, infixe  : 20 30 35 40 50 65 70 80 
+rec,  infixe  : 20 30 35 40 50 65 70 80 
+--- supprimer 30 (deux fils : remplace par son successeur 35)
+iter, largeur : 50 35 70 20 40 60 80 65 
+rec,  largeur : 50 35 70 20 40 60 80 65 
+iter, infixe  : 20 35 40 50 60 65 70 80 
+rec,  infixe  : 20 35 40 50 60 65 70 80 
+--- supprimer 50 (la racine, deux fils : remplacee par son successeur 60, qui a un fils droit)
+iter, largeur : 60 30 70 20 40 65 80 35 
+rec,  largeur : 60 30 70 20 40 65 80 35 
+iter, infixe  : 20 30 35 40 60 65 70 80 
+rec,  infixe  : 20 30 35 40 60 65 70 80 
+--- supprimer 70 (deux fils : son successeur 80 est son fils droit)
+iter, largeur : 50 30 80 20 40 60 35 65 
+rec,  largeur : 50 30 80 20 40 60 35 65 
+iter, infixe  : 20 30 35 40 50 60 65 80 
+rec,  infixe  : 20 30 35 40 50 60 65 80 
+--- supprimer 55 (absent)
+iter, largeur : 50 30 70 20 40 60 80 35 65 
+rec,  largeur : 50 30 70 20 40 60 80 35 65 
+iter, infixe  : 20 30 35 40 50 60 65 70 80 
+rec,  infixe  : 20 30 35 40 50 60 65 70 80 

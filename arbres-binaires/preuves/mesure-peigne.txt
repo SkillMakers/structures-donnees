@@ -1,0 +1,32 @@
+pile d'appels : 8192 Ko
+--- N=1000
+peigne_iter, N=1000 : hauteur 1000
+code retour : 0
+peigne_rec, N=1000 : hauteur 1000
+code retour : 0
+peigne_rec, N=1000 : hauteur 1000
+code retour : 0
+--- N=100000
+peigne_iter, N=100000 : hauteur 100000
+code retour : 0
+peigne_rec, N=100000 : hauteur 100000
+code retour : 0
+peigne_rec, N=100000 : hauteur 100000
+code retour : 0
+--- N=1000000
+peigne_iter, N=1000000 : hauteur 1000000
+code retour : 0
+Segmentation fault
+code retour : 139
+Segmentation fault
+code retour : 139
+--- N=10000000
+peigne_iter, N=10000000 : hauteur 10000000
+code retour : 0
+Segmentation fault
+code retour : 139
+Segmentation fault
+code retour : 139
+seuil, essai 1 (a 1000 pres) : passe a N=174321, plante a N=174931
+seuil, essai 2 (a 1000 pres) : passe a N=174321, plante a N=174931
+seuil, essai 3 (a 1000 pres) : passe a N=174321, plante a N=174931

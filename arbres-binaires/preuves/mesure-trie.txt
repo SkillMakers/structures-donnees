@@ -1,0 +1,20 @@
+--- N=1000
+melange, N=1000 : hauteur 20 ; inserer 0.000 s ; chercher les 1000 valeurs 0.000 s (1000 trouvees)
+code retour : 0
+trie, N=1000 : hauteur 1000 ; inserer 0.005 s ; chercher les 1000 valeurs 0.004 s (1000 trouvees)
+code retour : 0
+--- N=10000
+melange, N=10000 : hauteur 31 ; inserer 0.005 s ; chercher les 10000 valeurs 0.002 s (10000 trouvees)
+code retour : 0
+trie, N=10000 : hauteur 10000 ; inserer 0.451 s ; chercher les 10000 valeurs 0.365 s (10000 trouvees)
+code retour : 0
+--- N=20000
+melange, N=20000 : hauteur 38 ; inserer 0.011 s ; chercher les 20000 valeurs 0.006 s (20000 trouvees)
+code retour : 0
+trie, N=20000 : hauteur 20000 ; inserer 2.499 s ; chercher les 20000 valeurs 1.482 s (20000 trouvees)
+code retour : 0
+--- N=40000
+melange, N=40000 : hauteur 37 ; inserer 0.061 s ; chercher les 40000 valeurs 0.023 s (40000 trouvees)
+code retour : 0
+trie, N=40000 : hauteur 40000 ; inserer 8.551 s ; chercher les 40000 valeurs 5.463 s (40000 trouvees)
+code retour : 0
